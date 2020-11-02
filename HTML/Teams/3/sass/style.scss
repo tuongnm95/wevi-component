@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import '../../../Assets/sass/style.scss';
+
+
+body {
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+#team {
+    &.style-2 {
+        .wevi-row {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .wevi-row {
+        flex-direction: column-reverse;
+    }
+
+    .image {
+        @extend .col-lg-5,
+        .order-lg-1;
+        height: 300px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .desc {
+        @extend .col-lg-7,
+        .order-lg-12;
+        color: #555555;
+        font-size: 16px;
+        margin-bottom: 30px;
+
+        p {
+            margin-bottom: 30px;
+            line-height: 30px;
+        }
+
+        h3 {
+            font-size: 40px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: #444;
+            margin-bottom: 30px;
+
+            span {
+                display: block;
+                font-weight: 300;
+                font-size: 15px;
+                color: #999999;
+                letter-spacing: 4px;
+                margin-top: 10px;
+            }
+        }
+
+        .wevi-button--custom {
+            color: #ffffff;
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00bed7;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .wevi-row {
+            flex-direction: row;
+        }
+
+        .image {
+            height: unset;
+        }
+    }
+}

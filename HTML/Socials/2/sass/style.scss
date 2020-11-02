@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import '../../../Assets/sass/style.scss';
+
+
+body {
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+}
+
+img {
+    max-width: 100%;
+}
+
+#social {
+    a {
+        color: #999999;
+        display: inline-block;
+        margin-right: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: .3s all;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &:hover {
+            color: #00acc1;
+
+            i {
+                color: #ffffff;
+            }
+        }
+
+        i {
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 18px;
+            vertical-align: text-bottom;
+            transition: .3s all;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

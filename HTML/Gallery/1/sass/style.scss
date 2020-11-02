@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@import '../../../Assets/sass/style.scss';
+
+
+body {
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.owl-theme {
+
+    .owl-dots,
+    .owl-nav {
+        &:hover {
+            background: transparent;
+            border: unset;
+            border-color: unset;
+        }
+    }
+}
+
+#gallery {
+    &.style-1 {
+        .row {
+            @extend .no-gutters;
+        }
+    }
+
+    &.style-2 {
+        .item {
+            margin-bottom: 20px;
+        }
+    }
+
+    .gallery-component {
+        .item {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba($color: #000000, $alpha: 0.3);
+                opacity: 0;
+                visibility: hidden;
+                transition: .3s all;
+            }
+
+            &:hover {
+                &::after {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                .title {
+                    opacity: 1;
+                    visibility: visible;
+                    top: 50%;
+                }
+            }
+
+            .image {
+                position: relative;
+                height: 250px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .title {
+                font-weight: bold;
+                color: #fff;
+                display: inline-block;
+                padding: 6px 15px;
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: .3s all;
+                text-align: center;
+                background: #f21e4e;
+                width: 130px;
+                border-radius: 4px;
+                opacity: 0;
+                visibility: hidden;
+                z-index: 2;
+            }
+        }
+    }
+}

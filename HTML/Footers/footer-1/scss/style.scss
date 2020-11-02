@@ -1,0 +1,132 @@
+@import '../../../Assets/sass/style.scss';
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+footer {
+  background: #111111;
+  border-top-color: #222;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 40px 0px 0;
+
+  a {
+    color: #ffffff;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .wevi-widget {
+    color: #888888;
+    font-size: 16px;
+
+    .logo {
+      margin-bottom: 20px;
+      display: inline-block;
+
+      img {
+        max-width: 120px;
+      }
+    }
+
+    .socials {
+      a {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        transition: 0.3s all;
+        margin-right: 5px;
+
+        i {
+          color: #ffffff;
+        }
+
+        &.icon-pinterest {
+          background: #c8232c;
+        }
+
+        &.icon-fb {
+          background: #3b5998;
+        }
+
+        &.icon-google {
+          background: #dd4b39;
+        }
+
+        &.icon-twitter {
+          background: #00acee;
+        }
+      }
+    }
+  }
+
+  .wevi-widget-links {
+    ul {
+      padding: 0;
+
+      li {
+        padding-bottom: 15px;
+        list-style: none;
+        position: relative;
+        padding-left: 20px;
+
+        a {
+          &:hover {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.9);
+          }
+        }
+
+        &::after {
+          content: "\f105 ";
+          font-family: "fontAweSome";
+          display: inline-block;
+          position: absolute;
+          top: 0px;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .wevi-widget-email {
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #888888;
+    }
+
+    .wevi-button.wevi-button-bordered {
+      background-color: rgba($color: #ffffff, $alpha: 1);
+      color: #000000;
+      border-radius: 5px;
+      padding: 10px 20px;
+
+      &:hover {
+        background-color: transparent;
+        color: #ffffff;
+      }
+
+      &:focus {
+        outline: 0;
+        box-shadow: unset;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 80px;
+  }
+}

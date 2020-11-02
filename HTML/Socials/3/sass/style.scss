@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import '../../../Assets/sass/style.scss';
+
+
+body {
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+#social {
+    a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        margin-right: 10px;
+        text-align: center;
+
+        i {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        &.fb {
+            background: #507cbe;
+        }
+
+        &.in {
+            background: #aca786;
+        }
+
+        &.you {
+            background: #ed6c53;
+        }
+
+        &.pin {
+            background: #fb5653;
+        }
+
+        &.tw {
+            background: #65cdef;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

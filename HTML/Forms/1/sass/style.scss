@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import '../../../Assets/sass/style.scss';
+
+
+body {
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+#form {
+    width: 100%;
+    padding: 15px;
+
+    &.style-2 {
+        .form {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .form-head {
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+    .wevi-button {
+        background: #000000;
+        color: #ffffff;
+        border: 1px solid currentColor;
+        padding: 10px 25px;
+    }
+
+    .form {
+        flex-direction: column-reverse;
+        display: flex;
+        margin-top: 1rem;
+
+        .image {
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+
+        .form {
+            display: flex;
+            flex-direction: row;
+
+            .form-wrap,
+            .image {
+                margin: 0;
+                width: 50%;
+            }
+
+            form {
+                margin-right: 15px;
+            }
+
+            .image {}
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding: 0;
+        margin: 0;
+
+        .form {
+
+            .form-wrap,
+            .image {
+                width: 50%;
+            }
+
+            .form-wrap {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                form {
+                    max-width: 450px;
+                    margin: 0 auto;
+                    flex-shrink: 0;
+                }
+            }
+
+        }
+    }
+}

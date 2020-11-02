@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.component-wrapper {
+  position: relative;
+}
+
+#wevi-component-1 {
+
+  .component-bg,
+  .component-overlay {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    right: 0;
+    padding-top: 400px;
+    background-size: cover;
+
+    @media screen and (min-width: 1200px) {
+      top: 0;
+      padding-top: 800px;
+      width: 50%;
+    }
+  }
+
+  .component-overlay {
+    background-color: rgba(0, 0, 0, 0.68);
+  }
+
+  .component-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
+
+    .component-column {
+      flex-basis: 100%;
+      max-width: 100%;
+
+      @media screen and (min-width: 1200px) {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+
+      .column-inner {
+        position: relative;
+        width: 100%;
+        padding-top: 400px;
+
+        @media screen and (min-width: 1200px) {
+          padding-top: 800px;
+        }
+
+        .text-box {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 60%;
+
+          h2 {
+            font-size: 40px;
+          }
+
+          h4 {
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+
+          .icon-box {
+            display: flex;
+            width: 100%;
+            color: #ffffff;
+
+            &:not(:last-child) {
+              margin-bottom: 60px;
+            }
+
+            .icon-box-img {
+              width: 100px;
+              position: relative;
+              flex: 0 0 auto;
+
+              .icon {
+                position: absolute;
+                width: 100%;
+                padding-top: 100%;
+                height: 0;
+
+                svg {
+                  height: 100%;
+                  // transition: all .3s;
+                  fill: currentColor;
+                }
+
+                svg,
+                img,
+                i {
+                  position: absolute;
+                  left: 0;
+                  object-fit: cover;
+                  padding: 0;
+                  top: 50%;
+                  margin: 0;
+                  transform: translateY(-50%);
+                  width: 60%;
+                  margin-left: 20%;
+                  margin-right: 20%;
+                }
+
+                .icon-inner {
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  top: 0;
+                  color: rgba(255, 255, 255, 0.65);
+                  border: 2px solid currentColor;
+                  border-radius: 100%;
+                  transition: all .3s
+                }
+              }
+            }
+
+            .icon-box-text {
+              padding-left: 1em;
+              flex: 1 1 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

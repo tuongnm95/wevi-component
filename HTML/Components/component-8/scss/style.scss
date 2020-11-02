@@ -1,0 +1,81 @@
+@import '../../../Assets/sass/style.scss';
+
+
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#wevi-component-8 {
+  padding: 100px 0;
+
+  .wevi-component {
+    margin-bottom: 60px;
+
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+
+      .wevi-component--descripton {
+        margin-right: -70px;
+        margin-left: 0;
+        padding-left: 50px;
+        padding-right: 100px;
+      }
+    }
+
+    .wevi-component--image {
+      flex: 0 0 50%;
+      max-width: 50%;
+      position: relative;
+      z-index: 2;
+
+      img {
+        border: solid 5px #fffa67;
+        max-width: 100%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.22);
+      }
+    }
+
+    .wevi-component--descripton {
+      flex: 1;
+      color: #ffffff;
+      font-size: 16px;
+      background: #0a3643;
+      padding: 80px 50px 60px 100px;
+      margin: 50px 0px 0px -70px;
+
+      p:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    p {
+      font-size: 14px;
+    }
+
+    .wevi-component {
+      .wevi-component--descripton {
+        padding: 50px 30px 50px 70px;
+        margin: 50px 0px 0px -50px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .wevi-component {
+      flex-direction: column !important;
+      margin-bottom: 30px;
+
+      .wevi-component--image {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .wevi-component--descripton {
+        margin: 0;
+        padding: 40px 30px;
+      }
+    }
+  }
+}

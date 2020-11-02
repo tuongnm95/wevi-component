@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import '../../../Assets/sass/style.scss';
+
+
+body {
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+#social {
+    a {
+        display: inline-block;
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 10px;
+        line-height: 36px;
+
+        &.fb {
+            background: #0d47a1;
+        }
+
+        &.tw {
+            background: #40c4ff;
+        }
+
+        &.you {
+            background: #ff0000;
+        }
+
+        &.in {
+            background: radial-gradient(circle farthest-corner at 35% 90%, #ffa100, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #efa11c, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #8f44c7, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d43178, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%) !important;
+        }
+
+        &.pin {
+            background: #bd081c;
+        }
+
+        i {
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

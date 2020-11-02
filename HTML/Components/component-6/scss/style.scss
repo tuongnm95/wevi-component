@@ -1,0 +1,126 @@
+@import '../../../Assets/sass/style.scss';
+
+* {
+  font-family: 'Nunito', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#wevi-component-6 {
+  background: url(../images/bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-size: 14px;
+  padding-top: 35px;
+
+  .component-subtitle {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .wevi-component--item {
+    margin-bottom: 20px;
+
+    .image {
+      height: 99px;
+      width: 99px;
+      line-height: 99px;
+      flex-shrink: 0;
+      border: 1px dashed #ffffff;
+      border-radius: 50%;
+      margin: 12px auto 0;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        object-fit: contain;
+      }
+    }
+
+    .content {
+      margin-top: 20px;
+      margin-left: 12px;
+      text-align: center;
+
+      .number {
+        font-size: 45px;
+        font-weight: bold;
+        margin-right: 5px;
+      }
+
+      p {
+        color: #f6e7df;
+        font-size: 16px;
+        width: calc(100% - 50px);
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @media (min-width: 576px) {
+    .component-subtitle {
+      font-size: 30px;
+    }
+
+    .wevi-component--item {
+      .image {
+        width: 79px;
+        height: 79px;
+        line-height: 79px;
+        margin: 0 auto;
+
+        img {
+          width: 43px;
+          height: 43px;
+        }
+      }
+
+      .content {
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+          width: 100%;
+        }
+
+        .number {
+          margin: 0;
+          font-size: 45px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 992px) {
+    .wevi-component--item {
+      margin-bottom: 35px;
+
+      .image {
+        height: 99px;
+        width: 99px;
+        line-height: 99px;
+
+        img {
+          width: unset;
+          height: unset;
+        }
+      }
+
+      .content {
+        margin-left: 23px;
+
+        .number {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import "../../../Assets/sass/style.scss";
+
+body {
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+
+img {
+    max-width: 100%;
+}
+
+#pricing {
+    overflow: hidden;
+    width: 100%;
+
+    .owl-carousel .owl-dots .owl-dot {
+        span {
+            width: 20px;
+            height: 5px;
+            border-radius: 4px;
+            transition: all .3s ease-out;
+            opacity: .3;
+            background: #267df4;
+            transition: 0.3s all;
+
+        }
+
+        &.active {
+            span {
+                width: 45px;
+                background: #267df4;
+                display: inline-block;
+                opacity: 1;
+            }
+        }
+    }
+
+    .owl-stage {
+        display: flex;
+        flex-direction: row;
+
+        .owl-item {
+            align-self: flex-end;
+        }
+    }
+
+    .pricing-head {
+        margin-bottom: 50px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+
+            h2 {
+                font-size: 25px !important;
+            }
+        }
+
+        div {
+            color: #267df4;
+            padding: 3px 8px;
+            display: inline-block;
+            font-size: 12px;
+            font-style: normal;
+            background-color: rgba(38, 125, 244, 0.1);
+        }
+
+        h2 {
+            font-size: 42px;
+            font-weight: bold;
+        }
+    }
+
+    .pricing-component {
+        .price-item {
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            background: #ffffff;
+            border-radius: 5px;
+            overflow: hidden;
+
+            .button-large {
+                color: #fff;
+                padding: 8px 26px;
+                font-size: 1rem;
+                line-height: 30px;
+                border-radius: 3px;
+                background-color: #267df4;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .image {
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(4, 4, 4, 0.45);
+                    z-index: 2;
+                }
+
+                .card-img-overlay {
+                    z-index: 2;
+                    color: #ffffff;
+                }
+            }
+
+            .desc {
+                padding: 20px 30px;
+
+                .price-title {
+                    font-size: 48px;
+                    font-weight: 600;
+                    color: #267df4;
+
+                    small {
+                        position: relative;
+                        font-size: 16px;
+                        color: #aaa;
+                        top: -4px;
+                        margin-left: 6px;
+                    }
+                }
+
+                .list-group {
+                    border: unset;
+
+                    li {
+                        position: relative;
+                        display: block;
+                        padding: 0.75rem 1.25rem;
+                        background-color: #fff;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

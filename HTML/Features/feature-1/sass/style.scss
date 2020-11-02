@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import '../../../Assets/sass/style.scss';
+
+
+body {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2c3038;
+}
+
+img {
+    max-width: 100%;
+}
+
+.owl-theme {
+
+    .owl-dots,
+    .owl-nav {
+        &:hover {
+            background: transparent;
+            border: unset;
+            border-color: unset;
+        }
+    }
+}
+
+#feature {
+    &.style-1 {
+        .wevi-col {
+            @extend .col-lg-6;
+        }
+    }
+
+    &.style-2 {
+        .wevi-row {
+            flex-direction: row-reverse;
+        }
+
+        .type-1 {
+            @extend .col-lg-5,
+        }
+
+        .type-2 {
+            @extend .col-lg-6,
+            .offset-lg-1;
+        }
+    }
+
+    .wevi-col {
+        @extend .col-12,
+
+    }
+
+    .feature-image {
+        text-align: center;
+    }
+
+    .feature-desc {
+        h2 {
+            font-size: 37px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        ul {
+            font-weight: bold;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                margin-right: 20px;
+            }
+
+            .icon {
+                height: 32px;
+                width: 32px;
+                border-radius: 50%;
+                background-color: rgba(0, 155, 114, .1);
+                text-align: center;
+                line-height: 32px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

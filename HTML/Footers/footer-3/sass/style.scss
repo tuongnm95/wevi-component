@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import "../../../Assets/sass/style.scss";
+
+body {
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.owl-theme {
+  .owl-dots,
+  .owl-nav {
+    &:hover {
+      background: transparent;
+      border-color: unset;
+      border: unset;
+    }
+  }
+}
+
+.footer-content {
+  background: #ffffff;
+  font-size: 15px;
+
+  .wevi-widget {
+    @extend .col-6, .col-md-3, .col-lg-2;
+    margin-bottom: 20px;
+
+    &.wevi-store {
+      img {
+        margin-bottom: 10px;
+        max-width: 140px;
+      }
+    }
+
+    &.wevi-widget--imstagram {
+      @extend .col-12, .col-lg-4;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #333333;
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+
+        a {
+          color: rgba(0, 0, 0, 0.5);
+
+          &:hover {
+            color: #1abc9c;
+          }
+        }
+      }
+    }
+
+    .photos {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+.footer-copyright {
+  padding: 15px 0;
+  background: #f8f9fa;
+  margin-top: 30px;
+
+  a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    font-size: 0.875rem;
+    line-height: 30px !important;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2px;
+
+    i {
+      color: #ffffff;
+    }
+
+    &.facebook {
+      background: #3b5998;
+    }
+
+    &.twitter {
+      background: #00acee;
+    }
+
+    &.youtube-play {
+      background: #c4302b;
+    }
+
+    &.instagram {
+      background: #8a3ab9;
+    }
+  }
+}

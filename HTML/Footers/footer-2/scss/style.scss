@@ -1,0 +1,200 @@
+@import '../../../Assets/sass/style.scss';
+
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#wevi-footer-2 {
+  font-size: 14px;
+
+  img {
+    max-width: 100%;
+  }
+
+  .wevi-footer {
+    border-top: 1px solid rgba(0, 0, 0, .05);
+    padding-top: 30px;
+    font-size: 14px;
+    background-color: #007bc0;
+
+    .wevi-footer-primary {
+      color: #ffffff;
+      padding-bottom: 50px;
+
+      a {
+        color: #ffffff;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+
+      ul {
+        li {
+          padding-bottom: 15px;
+
+          a {
+            transition: .3s all;
+
+            &:hover {
+              color: #f26a32;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      input,
+      button,
+      textarea,
+      select {
+        &:focus {
+          outline: 0;
+          box-shadow: none;
+        }
+      }
+
+      .wevi-component-email {
+        input {
+          height: 41px;
+          border-radius: 0;
+          padding-right: 41px;
+        }
+
+        .wevi-button-send {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 41px;
+          width: 41px;
+          line-height: 41px;
+          text-align: center;
+          border: unset;
+          background-color: #f26a32;
+          color: #ffffff;
+          cursor: pointer;
+        }
+
+        &-title {
+          align-items: flex-start;
+
+          h3 {
+            margin-left: 20px;
+
+            span {
+              margin-top: 10px;
+              display: block;
+              text-transform: initial;
+              font-size: 14px;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .wevi-footer-infomation {
+    padding: 30px 0px;
+    background: #ffffff;
+    color: #000000;
+
+    i {
+      display: inline-block;
+      font-size: 18px;
+    }
+
+    .logo {
+      margin-bottom: 30px;
+      display: inline-block;
+    }
+
+    .socials {
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        text-align: center;
+        color: #ffffff;
+        margin-right: 10px;
+
+        &.icon-fb {
+          background-color: #3a589d;
+        }
+
+        &.icon-mail {
+          background: #111111;
+        }
+
+        &.icon-ins {
+          background-color: #3b6994;
+        }
+
+        &.icon-print {
+          background: #cb2320;
+        }
+      }
+    }
+
+    .address {
+      margin-bottom: 20px;
+
+      >div {
+        position: relative;
+        display: flex;
+        margin-bottom: 10px;
+
+        i {
+          display: inline-block;
+          margin-right: 15px;
+          font-size: 18px;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 576px) {
+    .wevi-footer-infomation {
+      .socials {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .wevi-footer-copyright {
+    padding: 15px 0px;
+    background-color: #eff7fc;
+  }
+
+  @media (min-width: 768px) {
+    .wevi-footer-infomation {
+      .socials {
+        justify-content: space-between;
+
+        a {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .wevi-footer-infomation {
+      .socials {
+        justify-content: flex-start;
+
+        a {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

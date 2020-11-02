@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import '../../../Assets/sass/style.scss';
+
+
+body {
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+#form {
+    width: 100%;
+    padding: 70px 15px;
+    background: url(../images/unnamed.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba($color: #000000, $alpha: 0.2);
+    }
+
+    .form-wrap {
+        max-width: 550px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    h2 {
+        font-size: 25px;
+        color: #000;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .wevi-button {
+        background: #000000;
+        border: 1px solid transparent;
+        color: #fff;
+        cursor: pointer;
+    }
+}

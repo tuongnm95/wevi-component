@@ -1,0 +1,59 @@
+@import '../../../Assets/sass/style.scss';
+
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#wevi-component-3 {
+  .box-content-wrapper {
+    padding-top: 18vh;
+    padding-bottom: 18vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .box-content-inner {
+      width: 100%;
+      margin: 0 auto;
+
+      @media screen and (min-width: 1200px) {
+        width: 50%;
+      }
+
+      .box-content-overlay {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .box-content {
+          padding-top: 5vh;
+          padding-bottom: 6vh;
+          padding-left: 10%;
+          padding-right: 10%;
+          background-color: rgba(10, 10, 10, .5);
+          text-align: center;
+
+          .box-control {
+            padding-top: 20px;
+
+            .wevi-button {
+              margin-left: 6px;
+              margin-right: 6px;
+            }
+          }
+
+          h3 {
+            font-size: 50px;
+            line-height: 56px;
+            color: #ffffff;
+          }
+
+          p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, .8);
+          }
+        }
+      }
+    }
+  }
+}

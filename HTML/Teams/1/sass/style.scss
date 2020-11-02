@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import '../../../Assets/sass/style.scss';
+
+
+body {
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+#teams {
+    &.style-1 {
+        .wevi-col {
+            @extend .col-lg-4;
+        }
+    }
+
+    &.style-2 {
+        .wevi-col {
+            @extend .col-lg-3;
+        }
+
+        .item {
+            border-radius: unset;
+            box-shadow: unset;
+            border: 1px solid #cccccc;
+
+            .image {
+                padding-bottom: 70%;
+            }
+        }
+    }
+
+    .wevi-col {
+        @extend .col-12,
+        .col-md-6;
+    }
+
+    .title {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .item {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.15);
+        margin-bottom: 20px;
+
+        .image {
+            position: relative;
+            padding-bottom: 56.25%;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .desc {
+            padding: 20px;
+
+            .name {
+                font-size: 20px;
+
+                span {
+                    display: block;
+                    font-weight: normal;
+                    font-size: 16px;
+                    margin-top: 10px;
+                    color: #00BED7;
+                }
+            }
+
+            .wevi-button {
+                border-radius: 50px;
+                color: #00BED7;
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {}
+}

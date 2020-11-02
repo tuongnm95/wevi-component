@@ -1,0 +1,127 @@
+@charset "UTF-8";
+@import '../../../Assets/sass/style.scss';
+
+
+body {
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+#store {
+    .owl-theme {
+        .owl-nav {
+            position: absolute;
+            top: -72px;
+            right: 0;
+            color: #ef524a;
+            font-size: 35px;
+            margin: 0 5px;
+
+            [class*=owl-] {
+                color: #ef524a;
+
+                &:hover {
+                    background: transparent;
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+            }
+        }
+
+
+        .owl-dots .owl-dot {
+            &.active {
+                span {
+                    width: 30px;
+                    background: #ef524a;
+                }
+            }
+
+            span {
+                margin: 0 5px;
+                height: 5px;
+                width: 12px;
+                border-radius: 20px;
+                background: rgba($color: #ef524a, $alpha: 0.6);
+                transition: .3s all;
+            }
+        }
+    }
+
+    &.style-1 {
+        @extend .container;
+    }
+
+    .wevi-slide {
+        position: relative;
+    }
+
+    .title {
+        color: #2f4858;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .wevi-item {
+        .image {
+            padding-bottom: 100%;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                transition: .3s all;
+            }
+
+            .back {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &:hover {
+                .back {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                .front {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+
+        .content {
+            padding: 10px 20px;
+            text-align: center;
+            color: #273a4f;
+
+            h3 a {
+                font-size: 20px;
+                color: #273a4f;
+            }
+
+            .link {
+                display: inline-block;
+                color: #ffffff;
+                text-transform: uppercase;
+                border-radius: 0;
+                padding: 8px 12px 8px 12px;
+                background: #ef524a;
+                border: 0 solid #ef524a;
+            }
+        }
+    }
+}
